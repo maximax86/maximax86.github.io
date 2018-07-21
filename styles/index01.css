@@ -1,3 +1,4 @@
+/*========================================Generales*/
 body {
   background:radial-gradient(#333,#222);
   margin: 0;
@@ -13,16 +14,23 @@ h1 {
   font-size: 35px;
   text-shadow: 1px 1px #111;
 }
+/*========================================Generales*/
 
 /*========================================index01*/
 .cuerpo {
   border-radius: 10px;
   color: #ffffff;
-}
-
-.cuerpo {
   background-color: #111;
   width: 800px;
+}
+
+.cuerpo li {
+  list-style-type: none;
+  display: inline;
+}
+
+h2 {
+  color: #ffffff;
 }
 
 .masven {
@@ -38,26 +46,18 @@ h1 {
   transform:scale(1.1);
 }
 
-.masvot {
-  width: 100px;
-  border-radius: 5px;
-}
-
-.masvot:hover {
-  -webkit-transform:scale(1.1);
-  -moz-transform:scale(1.1);
-  -ms-transform:scale(1.1);
-  -o-transform:scale(1.1);
-  transform:scale(1.1);
-}
-
 .cuerpocon {
   color: #ffffff;
   background: #111;
   border-radius: 50%;
 }
 
+.cuerpocon li {
+  display: inline;
+}
+
 .consol {
+  display: inline;
   width: 200px;
   background: radial-gradient(#68b8ab, #4a7c59);
   border-radius: 50%;
@@ -75,27 +75,24 @@ h1 {
 /*========================================index01*/
 
 /*========================================index02*/
-.listajue img {
-  border: solid;
-  border-color: #999;
-}
-
 .listajue li {
   list-style-type: none;
   float: left;
-  background-color: #111;
-  border-radius: 10%;
 }
 
 .buscajue {
   color: #ffffff;
   background-color: #111;
-  border-radius: 10%;
+  width: 500px;
+}
+
+.busc:hover {
+  color: #ffffff;
+  background-color: #333;
 }
 
 .lista {
   width: 200px;
-  border-radius: 10px;
 }
 
 .lista:hover {
@@ -105,22 +102,13 @@ h1 {
 -o-transform:scale(1.1);
 transform:scale(1.1);
 }
-
-.buscajue {
-  width: 500px;
-}
-
-.busc:hover {
-  color: #ffffff;
-  background-color: #333;
-}
 /*========================================index02*/
 
 /*========================================index03*/
 .descrpjue {
   color: #ffffff;
   background-color: #111;
-  border-radius: 10px 10px 10px 10px;
+  height: 400px;
 }
 
 #costo {
@@ -192,12 +180,9 @@ input[type="radio"]:checked ~ label {
 }
 
 .imgjuego {
+  float: left;
   width: 300px;
   border-radius: 5px;
-}
-
-.desjuego {
-  width: 500px;
 }
 /*========================================index03*/
 
@@ -221,7 +206,6 @@ legend {
   color: #ffffff;
   background-color: #333;
 }
-
 /*========================================index04*/
 
 /*========================================index05*/
@@ -313,6 +297,22 @@ legend {
   color: #ffffff;
 }
 
+.info th {
+  width: 30%;
+}
+
+.map li {
+  list-style-type: none;
+}
+
+.map a:hover {
+  text-decoration: underline;
+}
+
+.redesf li {
+  display: inline;
+}
+
 .icon {
   width: 50px;
 }
@@ -330,8 +330,4 @@ legend {
 a {
   color: #ffffff;
   text-decoration: none;
-}
-
-.map:hover {
-  text-decoration: underline;
 }
