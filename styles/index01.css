@@ -1,69 +1,132 @@
 /*========================================Generales*/
 body {
-  background:radial-gradient(#333,#222);
+  background-image: url("back.jpg");
   margin: 0;
   padding: 0;
 }
-
 .baner {
-  width: 350px;
+  width: 250px;
 }
-
 h1 {
   color: #ffffff;
   font-size: 35px;
+  text-align: center;
   text-shadow: 1px 1px #111;
 }
-/*========================================Generales*/
-
-/*========================================index01*/
-.cuerpo {
-  border-radius: 10px;
-  color: #ffffff;
-  background-color: #111;
-  width: 800px;
-}
-
-.cuerpo li {
-  list-style-type: none;
-  display: inline;
-}
-
 h2 {
   color: #ffffff;
 }
 
-.masven {
-  width: 100px;
-  border-radius: 5px;
+/*========================================Menu de navegacion*/
+.navbar ul {
+  list-style-type: none;
+  margin: auto;
+  padding: 1;
+  overflow: hidden;
+  background-color: #000;
 }
-
-.masven:hover {
+.navbar li {
+  float: left;
+}
+.navbar li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+.navbar li a:hover {
+  border-radius: 10px;
+  background-color: #333;
   -webkit-transform:scale(1.1);
   -moz-transform:scale(1.1);
   -ms-transform:scale(1.1);
   -o-transform:scale(1.1);
   transform:scale(1.1);
 }
-
-.cuerpocon {
+.navbar button:hover {
   color: #ffffff;
-  background: #111;
-  border-radius: 50%;
+  background-color: #333;
 }
 
-.cuerpocon li {
+/*========================================Menu inferior*/
+footer {
+  /*position: fixed;*/
+  margin: 0 auto auto auto;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #000;
+  color: white;
+  text-align: center;
+  font-family: serif;
+  font-size: 12px;
+  color: #ffffff;
+}
+footer th {
+  width: 30%;
+}
+footer li {
+  list-style-type: none;
+}
+footer a {
+  color: #ffffff;
+  text-decoration: none;
+}
+footer a:hover {
+  text-decoration: underline;
+}
+footer img {
+  width: 50px;
+}
+footer img:hover {
+  background-color: #333;
+  border-radius: 50%;
+ -webkit-transform:scale(1.1);
+ -moz-transform:scale(1.1);
+ -ms-transform:scale(1.1);
+ -o-transform:scale(1.1);
+ transform:scale(1.1);
+}
+
+/*========================================index01*/
+.masven {
+  text-align: center;
+  border-radius: 10px;
+  color: #ffffff;
+  /*background-color: #111;*/
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 100%;
+}
+.masven li {
+  list-style-type: none;
   display: inline;
 }
-
+.masven img {
+  width: 100px;
+  border-radius: 5px;
+}
+.masven img:hover {
+  -webkit-transform:scale(1.1);
+  -moz-transform:scale(1.1);
+  -ms-transform:scale(1.1);
+  -o-transform:scale(1.1);
+  transform:scale(1.1);
+}
 .consol {
+  text-align: center;
+  color: #ffffff;
+  background: #111;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 50%;
+}
+.consol img {
   display: inline;
   width: 200px;
   background: radial-gradient(#68b8ab, #4a7c59);
   border-radius: 50%;
 }
-
-.consol:hover {
+.consol img:hover {
   background: #faf3dd;
   border-radius: 50%;
   -webkit-transform:scale(1.1);
@@ -72,51 +135,73 @@ h2 {
   -o-transform:scale(1.1);
   transform:scale(1.1);
 }
-/*========================================index01*/
 
 /*========================================index02*/
+.listajue {
+  background-color: #333;
+  background-color: rgba(0, 0, 0, 0.6);
+}
 .listajue li {
   list-style-type: none;
-  float: left;
+  display: inline;
 }
-
-.buscajue {
-  color: #ffffff;
-  background-color: #111;
-  width: 500px;
+.listajue img {
+  width: 150px;
 }
-
-.busc:hover {
-  color: #ffffff;
-  background-color: #333;
-}
-
-.lista {
-  width: 200px;
-}
-
-.lista:hover {
+.listajue img:hover {
 -webkit-transform:scale(1.1);
 -moz-transform:scale(1.1);
 -ms-transform:scale(1.1);
 -o-transform:scale(1.1);
 transform:scale(1.1);
 }
-/*========================================index02*/
 
 /*========================================index03*/
 .descrpjue {
   color: #ffffff;
   background-color: #111;
+  background-color: rgba(0, 0, 0, 0.7);
   height: 400px;
 }
+.descrpjue p {
+  text-align: left;
+}
+.descrpjue img {
+  float: left;
+  width: 30%;
+  border-radius: 2%;
+}
 
-#costo {
+.clasificacion {
+  width: 250px;
+  margin: 0 auto;
+  height: 50px;
+  direction: rtl;
+  unicode-bidi: bidi-override;
+  font-size: 25px;
+}
+.clasificacion input[type="radio"] {
+  display: none;
+}
+.clasificacion input[type="radio"]:checked ~ label {
+  color: orange;
+}
+.clasificacion label {
+  color: #ffffff;
+  font-size: 20px;
+}
+.clasificacion label:hover,
+.clasificacion label:hover ~ label {
+  color: orange;
+}
+.clasificacion button {
+  cursor: pointer;
+}
+.costo {
   color: #4CAF50;
   font-size: 22px;
 }
-
-#comprar {
+.costo button {
     border-radius: 30px;
     border: none;
     padding: 5px 10px;
@@ -132,93 +217,48 @@ transform:scale(1.1);
     color: black;
     border: 2px solid #4CAF50;
 }
-
-#comprar:hover {
+.costo button:hover {
     background-color: #4CAF50;
     color: white;
 }
 
-#form {
-  width: 250px;
-  margin: 0 auto;
-  height: 50px;
-}
-
-#form p {
-  text-align: center;
-}
-
-#form label {
-  font-size: 20px;
-}
-
-#votar {
-  cursor: pointer;
-}
-
-input[type="radio"] {
-  display: none;
-}
-
-.estrellas {
-  color: #000000;
-}
-
-.clasificacion {
-  direction: rtl;
-  unicode-bidi: bidi-override;
-  font-size: 25px;
-}
-
-.estrellas:hover,
-.estrellas:hover ~ label {
-  color: orange;
-}
-
-input[type="radio"]:checked ~ label {
-  color: orange;
-}
-
-.imgjuego {
-  float: left;
-  width: 300px;
-  border-radius: 5px;
-}
-/*========================================index03*/
-
 /*========================================index04*/
-.registro {
-  width: 300px;
-}
-
-legend {
-  text-align: center;
-}
-
-#fieldreg {
+.registro fieldset {
+  width: 20%;
   color: #ffffff;
   text-align: center;
   background-color: #111;
-  border-radius: 30px;
+  background-color: rgba(0, 0, 0, 0.9);
+  border-radius: 10%;
 }
-
-.enviar:hover {
+.registro legend {
+  text-align: center;
+}
+.registro button:hover {
   color: #ffffff;
   background-color: #333;
 }
-/*========================================index04*/
 
 /*========================================index05*/
-.comentarios {
+.comentarios fieldset {
   color: #ffffff;
   background-color: #111;
-  width:150px;
-  border-radius: 30px;
+  background-color: rgba(0, 0, 0, 0.9);
+  width:30%;
+  border-radius: 10%;
+  text-align: center;
 }
-/*========================================index05*/
+.comentarios legend {
+  text-align: center;
+}
+.comentarios button:hover {
+  color: #ffffff;
+  background-color: #333;
+}
 
 /*========================================index06*/
-.gracias {
+.gracias table {
+  margin-top: 50px;
   width: 30%;
   height: 30%;
   color: #ffffff;
@@ -226,108 +266,113 @@ legend {
   border-radius: 10%;
   border-style: inset;
 }
-
-.volini {
-  background-color: rgba(0,0,0,0.5);
+.gracias button:hover {
   color: #ffffff;
-  border-radius: 50%;
-  width: 100px;
-  height: 50px;
-}
-
-.volini:hover {
-  background-color: #666;
-  color: #111;
-  border-radius: 50%;
-  -webkit-transform:scale(1.1);
-  -moz-transform:scale(1.1);
-  -ms-transform:scale(1.1);
-  -o-transform:scale(1.1);
-  transform:scale(1.1);
-}
-/*========================================index06*/
-
-/*========================================index07*/
-.comprar {
-  color: #ffffff;
-  background-color: #111;
-  width:300px;
-  border-radius: 30px;
-}
-/*========================================index07*/
-
-/* Menu de navegacion*/
-.navbar ul {
-  list-style-type: none;
-  margin: auto;
-  padding: 1;
-  overflow: hidden;
-  background-color: #111;
-}
-
-.navbar li {
-  float: left;
-}
-
-.navbar li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-.navbar li a:hover {
-  border-radius: 10px;
   background-color: #333;
-  -webkit-transform:scale(1.1);
-  -moz-transform:scale(1.1);
-  -ms-transform:scale(1.1);
-  -o-transform:scale(1.1);
-  transform:scale(1.1);
 }
 
-/*Menu inferior*/
-.info {
+/*========================================index07*/
+.comprar fieldset {
+  text-align: center;
+  color: #ffffff;
+  background-color: #111;
+  background-color: rgba(0, 0, 0, 0.9);
+  width:20%;
+  border-radius: 10%;
+}
+.comprar legend {
+  text-align: center;
+}
+.comprar button:hover {
+  color: #ffffff;
+  background-color: #333;
+}
+
+/*========================================botonlogin*/
+.login input[type=text], .login input[type=password] {
   width: 100%;
-  background-color: #000;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+/* Center the image and position the close button */
+.login a {
+  color: #ffffff;
+}
+.login a:hover {
+  color: blue;
+}
+.imgcontainer {
   text-align: center;
-  font-family: serif;
-  font-size: 12px;
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+.container {
+  padding: 16px;
+}
+.login span.psw {
+  float: right;
+  padding-top: 16px;
+}
+/* The Modal (background) */
+.modal {
   color: #ffffff;
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  padding-top: 60px;
 }
-
-.info th {
-  width: 30%;
-}
-
-.map li {
-  list-style-type: none;
-}
-
-.map a:hover {
-  text-decoration: underline;
-}
-
-.redesf li {
-  display: inline;
-}
-
-.icon {
-  width: 50px;
-}
-
-.icon:hover {
+/* Modal Content/Box */
+.modal-content {
   background-color: #333;
-  border-radius: 50%;
- -webkit-transform:scale(1.1);
- -moz-transform:scale(1.1);
- -ms-transform:scale(1.1);
- -o-transform:scale(1.1);
- transform:scale(1.1);
+  background-color: rgba(0, 0, 0, 0.9);
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 50%; /* Could be more or less, depending on screen size */
 }
-
-a {
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
   color: #ffffff;
-  text-decoration: none;
+  font-size: 35px;
+  font-weight: bold;
+}
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)}
+  to {-webkit-transform: scale(1)}
+}
+@keyframes animatezoom {
+  from {transform: scale(0)}
+  to {transform: scale(1)}
+}
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+    }
+  .cancelbtn {
+     width: 100%;
+    }
 }
