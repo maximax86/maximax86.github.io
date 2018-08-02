@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="styles/styles01.css">
+  </head>
+  <body>
+    <div class="header">
+      <img src="img/index01/baner02.png">
+      <div class="topnav">
+        <a href="index.html" title="Inicio">Inicio</a>
+        <a href="a02.html" title="Juesgos para PS">PlayStation</a>
+        <a href="a02.html" title="Juesgos para PC">PC</a>
+        <a href="a02.html" title="Juesgos para Xbox">X-Box</a>
+        <a href="a02.html" title="Juesgos para Celular">Celular</a>
+        <a href="a04.html" title="Registro">Registrarse</a>
+        <a href="a05.html" title="Contacto">Contacto</a>
+        <div style="float:right">
+          <button onclick="document.getElementById('id01').style.display='block'">Login</button>
+          <div id="id01" class="modal">
+            <form class="modal-content animate">
+              <div>
+                <span onclick="document.getElementById('id01').style.display='none'" class="close">&times;</span>
+              </div>
+              <div class="container">
+                <label for="uname"><b>Usuario</b></label>
+                  <input type="text" placeholder="Nombre de Usuario" name="uname" required>
+                <label for="psw"><b>Contraseña</b></label>
+                  <input type="password" placeholder="Ingrese su Contraseña" name="psw" required>
+                <button type="submit" class="entrar">Entrar</button>
+                  <br>
+                <label>
+                  <input type="checkbox" checked="checked" name="remember">Recordarme
+                </label>
+                  <span class="psw"><a href="#">No recuerdo mi contraseña</a></span>
+                  <br>
+                <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancelar</button>
+              </div>
+            </form>
+          </div>
+          <script>
+            var modal = document.getElementById('id01');
+            window.onclick = function(event) {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                }
+            }
+          </script>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="leftcolumn">
+          <div class="carddesjue">
+            <h1>TITULO DEL JUEGO<h1>
+            <div>
+              <table class="descrpjue">
+                <tr>
+                  <th>
+                    <div class="galefot">
+                      <div>
+                          <img class="mySlides" src="img/index02/0.jpg">
+                          <img class="mySlides" src="img/index02/01.png">
+                          <img class="mySlides" src="img/index02/02.png">
+                          <img class="mySlides" src="img/index02/03.png">
+                      </div>
+                      <div class="fotonav1">
+                        <button onclick="plusDivs(-1)">&#10094;</button>
+                      </div>
+                      <div class="fotonav2">
+                        <button onclick="plusDivs(1)">&#10095;</button>
+                      </div>
+                    </div>
+                        <script>
+                          var slideIndex = 1; showDivs(slideIndex); function plusDivs(n) {showDivs(slideIndex += n);}
+                          function currentDiv(n) {showDivs(slideIndex = n);}
+                          function showDivs(n) {
+                            var i;
+                            var x = document.getElementsByClassName("mySlides");
+                            var dots = document.getElementsByClassName("demo");
+                            if (n > x.length) {slideIndex = 1}
+                            if (n < 1) {slideIndex = x.length}
+                            for (i = 0; i < x.length; i++) {
+                               x[i].style.display = "none";
+                            }
+                            for (i = 0; i < dots.length; i++) {dots[i].className = dots[i].className.replace(" w3-white", "");}
+                            x[slideIndex-1].style.display = "block"; dots[slideIndex-1].className += " w3-white";}
+                        </script>
+                    </div>
+                  </th>
+                  <th>
+                    <p>ACA VA LA DESCRIPCION DEL JUEGO<br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid ex ea commodi consequat. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                  </th>
+                </tr>
+                <tr>
+                  <th>
+                    <form class="clasificacion">
+                      <div>
+                        <input id="radio1" name="estrellas" value="10" type="radio"><label for="radio1">★</label>
+                        <input id="radio2" name="estrellas" value="9" type="radio"><label for="radio2" >★</label>
+                        <input id="radio3" name="estrellas" value="8" type="radio"><label for="radio3">★</label>
+                        <input id="radio4" name="estrellas" value="7" type="radio"><label for="radio4">★</label>
+                        <input id="radio5" name="estrellas" value="6" type="radio"><label for="radio5">★</label>
+                        <input id="radio6" name="estrellas" value="5" type="radio"><label for="radio6">★</label>
+                        <input id="radio7" name="estrellas" value="4" type="radio"><label for="radio7">★</label>
+                        <input id="radio8" name="estrellas" value="3" type="radio"><label for="radio8">★</label>
+                        <input id="radio9" name="estrellas" value="2" type="radio"><label for="radio9">★</label>
+                        <input id="radio10" name="estrellas" value="1" type="radio"><label for="radio10">★</label>
+                      </div>
+                        <button type="submit">Votar</button>
+                    </form>
+                  </th>
+                  <th>
+                    <div class="compra">
+                      <div class="costo">
+                        u$s 00,00<br>
+                      </div>
+                        <div class="costo">
+                          <a href="a07.html"><button>Comprar</button></a>
+                        </div>
+                     </div>
+                  </th>
+                </tr>
+              </table>
+            </div>
+            <br><br>
+            <div class="video" align="center">
+              <iframe width="400" height="300" src="https://www.youtube.com/embed/2gUtfBmw86Y" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+      <div class="rightcolumn">
+          <div class="cardvid">
+            <h2>Recomendados</h2>
+            <div>
+              <iframe src="https://www.youtube.com/embed/2gUtfBmw86Y" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            </div>
+            <p>Trailers con los juegos mas populares</p>
+          </div>
+          <div class="cardlanz">
+            <h3>Ultimos lanzamientos</h3>
+            <ul>
+              <li><img src="img/index02/03.png"></li>
+              <li><a href="a03.html"><img src="img/index02/0.jpg"></a></li>
+              <li><img src="img/index02/02.png"></li>
+            </ul>
+            <p>Las ultimas novedades</p>
+          </div>
+          <div class="cardred">
+            <th>
+              <h3>Redes sociales</h3>
+                <a href="" target="_blank"><img id="twitt" src="img/twit.png"></a>
+                <a href="" target="_blank"><img id="insta" src="img/insta.png"></a>
+                <a href="" target="_blank"><img id="face" src="img/face.png"></a>
+              <p>Seguinos</p>
+          </div>
+        </div>
+    </div>
+    <br>
+    <footer>
+      <table>
+        <tr>
+          <th>INFORMACIÓN LEGAL</th><th>MAPA DEL SITIO</th><th></th>
+        </tr>
+        <tr>
+          <th>Lorem ipsum dolor sit amet<br>consectetur adipiscing elit<br>sed eiusmod tempor incidunt ut labore et dolore magna aliqua.</th>
+          <th>
+            <ul>
+              <li><a href="a02.html" title="Juesgos para PC">PC</a></li>
+              <li><a href="a02.html" title="Juesgos para Xbox">X-Box</a></li>
+              <li><a href="a02.html" title="Juesgos para PS">PlayStation</a></li>
+              <li><a href="a02.html" title="Juesgos para Celular">Celular</a></li>
+              <li><a href="a04.html" title="Registro">Registrarse</a></li>
+              <li><a href="a05.html" title="Contacto">Contacto</a></li>
+            </ul>
+          </th>
+        </tr>
+        <tr>
+          <th></th><th></th><th class="cr">Credo por Maximax86</th>
+        </tr>
+      </table>
+    </footer>
+  </body>
+</html>

@@ -1,96 +1,131 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" type="text/css" href="styles/styles.css">
-    <meta charset="utf-8">
-    <meta name="viewport" content="initial-scale=1, width=device-width">
-    <title>Game Games - Home</title>
+    <link rel="stylesheet" type="text/css" href="styles/styles01.css">
   </head>
   <body>
-    <div class="cabecera">
-      <div class="baner">
-        <a href="index.html"><img src="img/index01/baner02.png" class="baner"></a>
-      </div>
-      <div class="navbar">
-          <ul>
-            <li><a href="index02.html" title="Juesgos para PC">PC</a></li>
-            <li><a href="index02.html" title="Juesgos para Xbox">X-Box</a></li>
-            <li><a href="index02.html" title="Juesgos para PS">PlayStation</a></li>
-            <li><a href="index02.html" title="Juesgos para Celular">Celular</a></li>
-            <li><a href="index04.html" title="Registro">Registrarse</a></li>
-            <li><a href="index05.html" title="Contacto">Contacto</a></li>
-            <div class="login">
-              <button onclick="document.getElementById('id01').style.display='block'">Login</button>
-              <div id="id01" class="modal">
-                <form class="modal-content animate" action="/action_page.php">
-                  <div class="imgcontainer">
-                    <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
-                  </div>
-                  <div class="container">
-                    <label for="uname"><b>Usuario</b></label>
+    <div class="header">
+      <img src="img/index01/baner02.png">
+        <div class="topnav">
+          <a href="index.html" title="Inicio">Inicio</a>
+          <a href="a02.html" title="Juesgos para PS">PlayStation</a>
+          <a href="a02.html" title="Juesgos para PC">PC</a>
+          <a href="a02.html" title="Juesgos para Xbox">X-Box</a>
+          <a href="a02.html" title="Juesgos para Celular">Celular</a>
+          <a href="a04.html" title="Registro">Registrarse</a>
+          <a href="a05.html" title="Contacto">Contacto</a>
+          <div class="login" style="float:right">
+            <button onclick="document.getElementById('id01').style.display='block'">Login</button>
+            <div id="id01" class="modal">
+              <form class="modal-content animate">
+                <div>
+                  <span onclick="document.getElementById('id01').style.display='none'" class="close">&times;</span>
+                </div>
+                <div class="container">
+                  <label for="uname"><b>Usuario</b></label>
                     <input type="text" placeholder="Nombre de Usuario" name="uname" required>
-                    <label for="psw"><b>Contraseña</b></label>
-                    <input type="password" placeholder="Contraseña" name="psw" required>
-                    <button type="submit">Login</button>
-                    <label>
-                      <input type="checkbox" checked="checked" name="remember">Recordarme
-                    </label>
-                  </div>
-                  <div class="container">
-                    <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancelar</button>
-                    <span class="psw"><a href="#">No recuerdo mi contraseña</a></span>
-                  </div>
-                </form>
-              </div>
+                  <label for="psw"><b>Contraseña</b></label>
+                    <input type="password" placeholder="Ingrese su Contraseña" name="psw" required>
+                  <button type="submit" class="entrar">Entrar</button>
+                    <br>
+                  <label>
+                    <input type="checkbox" checked="checked" name="remember">Recordarme
+                  </label>
+                    <div class="psw"><a href="#">No recuerdo mi contraseña</a></div>
+                    <br>
+                  <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancelar</button>
+                </div>
+              </form>
             </div>
-          </ul>
-        </div>
-        <br>
+            <script>
+              var modal = document.getElementById('id01');
+              window.onclick = function(event) {
+                  if (event.target == modal) {
+                      modal.style.display = "none";
+                  }
+              }
+            </script>
+          </div>
+      </div>
     </div>
-    <div class="masven">
-        <h2>Los mas vendidos</h2>
-        <ul class="masven">
-          <li><img src="img/index02/0.jpg"></li>
-          <li><img src="img/index02/0.png"></li>
-          <li><img src="img/index02/0.jpg"></li>
-          <li><img src="img/index02/0.png"></li>
-          <li><img src="img/index02/0.jpg"></li>
-          <li><img src="img/index02/0.png"></li>
-          <li><img src="img/index02/0.jpg"></li>
-        </ul>
+    <div class="row">
+      <div class="leftcolumn">
+        <div class="cardmasven">
+          <h2>Los mas Vendidos</h2>
+          <div class="masven">
+            <ul>
+              <li><a href="a03.html"><img src="img/index02/0.jpg"></a></li>
+              <li><img src="img/index02/01.png"></li>
+              <li><a href="a03.html"><img src="img/index02/0.jpg"></a></li>
+              <li><img src="img/index02/02.png"></li>
+              <li><a href="a03.html"><img src="img/index02/0.jpg"></a></li>
+              <li><img src="img/index02/03.png"></li>
+              <li><a href="a03.html"><img src="img/index02/0.jpg"></a></li>
+            </ul>
+          </div>
+          <p>Los titulos mas comprados por la comunidad</p>
+        </div>
+        <div class="cardcon">
+          <h2>Juegos Por Consola</h2>
+          <div class="consol">
+            <a href="a02.html"><img src="img/index01/p02.png"></a>
+            <a href="a02.html"><img src="img/index01/x02.png"></a>
+            <a href="a02.html"><img src="img/index01/w02.png"></a>
+            <a href="a02.html"><img src="img/index01/a02.png"></a>
+          </div>
+          <h5>Nuestra oferta organizada por consola</h5>
+        </div>
       </div>
-      <br>
-    <div class="consol">
-          <a href="index02.html"><img src="img/index01/p01.png"></a>
-          <a href="index02.html"><img src="img/index01/x01.png"></a>
-          <a href="index02.html"><img src="img/index01/w01.png"></a>
-          <a href="index02.html"><img src="img/index01/a01.png"></a>
+      <div class="rightcolumn">
+        <div class="cardvid">
+          <h2>Recomendados</h2>
+          <div>
+            <iframe src="https://www.youtube.com/embed/2gUtfBmw86Y" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          </div>
+          <p>Trailers con los juegos mas populares</p>
+        </div>
+        <div class="cardlanz">
+          <h3>Ultimos lanzamientos</h3>
+          <ul>
+            <li><img src="img/index02/03.png"></li>
+            <li><a href="a03.html"><img src="img/index02/0.jpg"></a></li>
+            <li><img src="img/index02/02.png"></li>
+          </ul>
+          <p>Las ultimas novedades</p>
+        </div>
+        <div class="cardred">
+          <th>
+            <h3>Redes sociales</h3>
+              <a href="" target="_blank"><img id="twitt" src="img/twit.png"></a>
+              <a href="" target="_blank"><img id="insta" src="img/insta.png"></a>
+              <a href="" target="_blank"><img id="face" src="img/face.png"></a>
+            <p>Seguinos</p>
+        </div>
       </div>
-      <br><br>
+    </div>
+    <br>
     <footer>
-        <table>
-          <tr>
-            <th>INFORMACIÓN LEGAL</th><th>MAPA DEL SITIO</th><th>REDES SOCIALES</th>
-          </tr>
-          <tr>
-            <th>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua.</th>
-            <th>
-              <ul>
-                <li><a href="index02.html" title="Juesgos para PC">PC</a></li>
-                <li><a href="index02.html" title="Juesgos para Xbox">X-Box</a></li>
-                <li><a href="index02.html" title="Juesgos para PS">PlayStation</a></li>
-                <li><a href="index02.html" title="Juesgos para Celular">Celular</a></li>
-                <li><a href="index04.html" title="Registro">Registrarse</a></li>
-                <li><a href="index05.html" title="Contacto">Contacto</a></li>
-              </ul>
-            </th>
-            <th>
-              <a href="" target="_blank"><img src="img/twit.png"></a>
-              <a href="" target="_blank"><img src="img/insta.png"></a>
-              <a href="" target="_blank"><img src="img/face.png"></a>
-            </th>
-          </tr>
-        </table>
-      </footer>
+      <table>
+        <tr>
+          <th>INFORMACIÓN LEGAL</th><th>MAPA DEL SITIO</th><th></th>
+        </tr>
+        <tr>
+          <th>Lorem ipsum dolor sit amet<br>consectetur adipiscing elit<br>sed eiusmod tempor incidunt ut labore et dolore magna aliqua.</th>
+          <th>
+            <ul>
+              <li><a href="a02.html" title="Juesgos para PC">PC</a></li>
+              <li><a href="a02.html" title="Juesgos para Xbox">X-Box</a></li>
+              <li><a href="a02.html" title="Juesgos para PS">PlayStation</a></li>
+              <li><a href="a02.html" title="Juesgos para Celular">Celular</a></li>
+              <li><a href="a04.html" title="Registro">Registrarse</a></li>
+              <li><a href="a05.html" title="Contacto">Contacto</a></li>
+            </ul>
+          </th>
+        </tr>
+        <tr>
+          <th></th><th></th><th class="cr">Credo por Maximax86</th>
+        </tr>
+      </table>
+    </footer>
   </body>
 </html>

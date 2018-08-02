@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="styles/styles01.css">
+  </head>
+  <body>
+    <div class="header">
+      <img src="img/index01/baner02.png">
+      <div class="topnav">
+        <a href="index.html" title="Inicio">Inicio</a>
+        <a href="a02.html" title="Juesgos para PS">PlayStation</a>
+        <a href="a02.html" title="Juesgos para PC">PC</a>
+        <a href="a02.html" title="Juesgos para Xbox">X-Box</a>
+        <a href="a02.html" title="Juesgos para Celular">Celular</a>
+        <a href="a04.html" title="Registro">Registrarse</a>
+        <a href="a05.html" title="Contacto">Contacto</a>
+        <div style="float:right">
+          <button onclick="document.getElementById('id01').style.display='block'">Login</button>
+          <div id="id01" class="modal">
+            <form class="modal-content animate">
+              <div>
+                <span onclick="document.getElementById('id01').style.display='none'" class="close">&times;</span>
+              </div>
+              <div class="container">
+                <label for="uname"><b>Usuario</b></label>
+                  <input type="text" placeholder="Nombre de Usuario" name="uname" required>
+                <label for="psw"><b>Contraseña</b></label>
+                  <input type="password" placeholder="Ingrese su Contraseña" name="psw" required>
+                <button type="submit" class="entrar">Entrar</button>
+                  <br>
+                <label>
+                  <input type="checkbox" checked="checked" name="remember">Recordarme
+                </label>
+                  <span class="psw"><a href="#">No recuerdo mi contraseña</a></span>
+                  <br>
+                <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancelar</button>
+              </div>
+            </form>
+          </div>
+          <script>
+            var modal = document.getElementById('id01');
+            window.onclick = function(event) {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                }
+            }
+          </script>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="leftcolumn">
+          <div class="cardcomp">
+            <div class="comprar">
+              <h1>COMPRAR</h1>
+              <form action="a06.html">
+                <section>
+                  <fieldset>
+                      <br>
+                    <div>
+                      Metodo de pago:<br>
+                      <select name="motivo">
+                        <option>VISA</option>
+                        <option>MASTERCARD</option>
+                        <option>AmericanExpress</option>
+                        <option>PayPal</option>
+                      </select>
+                    </div>
+                      <br>
+                    <div>
+                      <label for="Nombre">N° de Cuenta:</label>
+                        <br>
+                        <input placeholder="Numero de Cuenta" type="text" name="N°Cuenta" size="20" maxlength="20" required id="numtarj">
+                    </div>
+                        <br>
+                    <div>
+                      <label for="fecha de vencimiento">Fecha de Vencimiento:</label>
+                        <br>
+                        <input placeholder="venc" type="date" name="FechVen" size="20" required id="FechVen">
+                    </div>
+                        <br>
+                    <div>
+                      Pagos:<br>
+                      <select name="cuotas">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>6</option>
+                      </select>
+                    </div>
+                        <br>
+                    <div class="button">
+                      <button type="submit">Comprar</button>
+                    </div>
+                  </fieldset>
+                </section>
+              </form>
+            </div>
+          </div>
+        </div>
+      <div class="rightcolumn">
+            <div class="cardvid">
+              <h2>Recomendados</h2>
+              <div>
+                <iframe src="https://www.youtube.com/embed/2gUtfBmw86Y" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+              </div>
+              <p>Trailers con los juegos mas populares</p>
+            </div>
+            <div class="cardlanz">
+              <h3>Ultimos lanzamientos</h3>
+              <ul>
+                <li><img src="img/index02/03.png"></li>
+                <li><a href="a03.html"><img src="img/index02/0.jpg"></a></li>
+                <li><img src="img/index02/02.png"></li>
+              </ul>
+              <p>Las ultimas novedades</p>
+            </div>
+            <div class="cardred">
+              <th>
+                <h3>Redes sociales</h3>
+                  <a href="" target="_blank"><img id="twitt" src="img/twit.png"></a>
+                  <a href="" target="_blank"><img id="insta" src="img/insta.png"></a>
+                  <a href="" target="_blank"><img id="face" src="img/face.png"></a>
+                <p>Seguinos</p>
+            </div>
+          </div>
+    </div>
+    <br>
+    <footer>
+      <table>
+        <tr>
+          <th>INFORMACIÓN LEGAL</th><th>MAPA DEL SITIO</th><th></th>
+        </tr>
+        <tr>
+          <th>Lorem ipsum dolor sit amet<br>consectetur adipiscing elit<br>sed eiusmod tempor incidunt ut labore et dolore magna aliqua.</th>
+          <th>
+            <ul>
+              <li><a href="a02.html" title="Juesgos para PC">PC</a></li>
+              <li><a href="a02.html" title="Juesgos para Xbox">X-Box</a></li>
+              <li><a href="a02.html" title="Juesgos para PS">PlayStation</a></li>
+              <li><a href="a02.html" title="Juesgos para Celular">Celular</a></li>
+              <li><a href="a04.html" title="Registro">Registrarse</a></li>
+              <li><a href="a05.html" title="Contacto">Contacto</a></li>
+            </ul>
+          </th>
+        </tr>
+        <tr>
+          <th></th><th></th><th class="cr">Credo por Maximax86</th>
+        </tr>
+      </table>
+    </footer>
+  </body>
+</html>

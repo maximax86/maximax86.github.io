@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      .menubtn {
+          background-color: #111;
+          color: white;
+          padding: 16px;
+          font-size: 16px;
+          border: none;
+          cursor: pointer;
+      }
+      .menubox {
+          position: relative;
+          display: inline-block;
+      }
+      .menubox-content {
+          display: none;
+          position: absolute;
+          color: #ffffff;
+          background-color: #111;
+          min-width: 160px;
+          box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+          z-index: 1;
+      }
+      .menubox-content a {
+          color: #ffffff;
+          padding: 12px 16px;
+          text-decoration: none;
+          display: block;
+      }
+      .menubox-content a:hover {
+        background-color: #222
+      }
+      .menubox:hover .menubox-content {
+          display: block;
+      }
+      .menubox:hover .menubtn {
+          background-color: #333;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="menubox">
+      <button class="menubtn">Menú</button>
+        <div class="menubox-content">
+          <a href="index.html" title="Inicio">Inicio</a>
+          <a href="index02.html" title="Juesgos para PS">PlayStation</a>
+          <a href="index02.html" title="Juesgos para PC">PC</a>
+          <a href="index02.html" title="Juesgos para Xbox">X-Box</a>
+          <a href="index02.html" title="Juesgos para Celular">Celular</a>
+          <a href="index04.html" title="Registro">Registrarse</a>
+          <a href="index05.html" title="Contacto">Contacto</a>
+          <a href="#">Login</a>
+        </div>
+    </div>
+  </body>
+</html>
