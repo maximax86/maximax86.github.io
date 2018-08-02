@@ -5,8 +5,7 @@
 body {
   color: #ffffff;
   font-family: Arial;
-  background-image: url("back.jpg");
-  *background-color: grey;
+  background: radial-gradient( #041700, #2F0128, #041700, #2F0128);
   margin: 0;
   padding: 0;
 }
@@ -162,6 +161,9 @@ footer .cr {
         width: 100%;
     }
     .cardmasven {
+      display: none;
+    }
+    .video {
       display: none;
     }
 }
@@ -363,6 +365,10 @@ footer .cr {
     margin-top: 20px;
 }
 
+.carddesjue p {
+  text-align: justify;
+}
+
 .descrpjue {
   font-size: 16px;
   background-color: rgba(0, 0, 0, 0.9);
@@ -371,10 +377,10 @@ footer .cr {
   text-align: left;
 }
 .descrpjue img {
-  float: left;
-  width: 100%;
+  width: 300px;
   border-radius: 2%;
 }
+
 .mySlides {
   display:none
 }
@@ -387,9 +393,6 @@ footer .cr {
 }
 
 .clasificacion {
-  width: 250px;
-  margin: 0 auto;
-  height: 50px;
   direction: rtl;
   unicode-bidi: bidi-override;
 }
