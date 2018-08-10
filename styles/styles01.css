@@ -10,6 +10,12 @@ body {
   padding: 0;
 }
 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 .header img {
   width: 250px;
 }
@@ -51,7 +57,7 @@ button:hover {
     width: 75%;
 }
 .rightcolumn {
-    float: left;
+    float: right;
     width: 25%;
     padding-left: 20px;
 }
@@ -273,11 +279,6 @@ footer .cr {
   transform:scale(1.1);
 }
 
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
 
 .cardmasven {
   background-color: rgba(0, 0, 0, 0.6);
@@ -361,39 +362,71 @@ footer .cr {
 
 /*========================a03*/
 .carddesjue {
-    background-color: rgba(0, 0, 0, 0.6);
-    padding: 20px;
-    margin-top: 20px;
+  display: inline-block;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 20px;
+  margin-top: 20px;
 }
 
-.carddesjue p {
-  text-align: justify;
+.boxes1 {
+  height: 500px;
+  float: left;
+  width: 50%;
+  background-color: rgba(0, 0, 0, 0.9);
+  display: inline-block;
+}
+.boxes2 {
+  float: left;
+  width: 50%;
+  height: 100px;
+  background-color: rgba(0, 0, 0, 0.9);
+  display: inline-block;
 }
 
-.descrpjue {
-  font-size: 16px;
+.desjue {
   background-color: rgba(0, 0, 0, 0.9);
 }
-.descrpjue p {
-  text-align: left;
+
+.galefot {
+  display: inline;
 }
-.descrpjue img {
+
+.fotojue img {
+  margin-left: 15%;
   width: 300px;
   border-radius: 2%;
 }
-
 .mySlides {
   display:none
 }
-
 .fotonav1 {
   float: left;
+}
+.fotonav1 button {
+  margin-top: 0px;
+  width: 150px;
 }
 .fotonav2 {
   float: right;
 }
+.fotonav2 button {
+  margin-top: 0px;
+  width: 150px;
+}
 
+.textjue {
+  margin-top: 50px;
+  margin-left: 50px;
+  font-size: 16px;
+  text-align: left;
+}
+
+.estrellas {
+  margin-top: 5px;
+  margin-left: 50px;
+}
 .clasificacion {
+  float: left;
   direction: rtl;
   unicode-bidi: bidi-override;
 }
@@ -412,6 +445,10 @@ footer .cr {
   color: orange;
 }
 
+.compra {
+  margin-top: 15px;
+  margin-left: 50%;
+}
 .costo {
   color: #4CAF50;
   font-size: 22px;
@@ -435,6 +472,11 @@ footer .cr {
 .costo button:hover {
     background-color: #4CAF50;
     color: white;
+}
+
+.video {
+  margin-top: 12px;
+  margin-left: 25%;
 }
 
 /*========================a04*/
