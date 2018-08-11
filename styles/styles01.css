@@ -130,17 +130,19 @@ button:hover {
 
 footer {
     padding: 20px;
-    text-align:left;
     margin-top: 20px;
     margin: 0 auto auto auto;
     left: 0;
     bottom: 0;
     width: 100%;
+    height: 200px;
     background-color: #000;
     font-size: 12px;
 }
-footer table {
-  width: 100%;
+footer div {
+  float: left;
+  height: 100%;
+  display: inline-block;
 }
 footer li {
   list-style-type: none;
@@ -152,10 +154,16 @@ footer a {
 footer a:hover {
   text-decoration: underline;
 }
-footer .cr {
-  float: right;
+#leginfo, #mapainfo {
+  width: 35%;
+  text-align: center;
+}
+#crinfo {
+  width: 30%;
+  text-align: right;
 }
 
+/*========================Responsive*/
 @media screen and (max-width: 800px) {
     .leftcolumn, .rightcolumn {
         width: 100%;
@@ -172,6 +180,9 @@ footer .cr {
     }
     .video {
       display: none;
+    }
+    .boxes3, .boxes4 {
+      min-width: 350px;
     }
 }
 
@@ -279,7 +290,6 @@ footer .cr {
   transform:scale(1.1);
 }
 
-
 .cardmasven {
   background-color: rgba(0, 0, 0, 0.6);
   padding: 20px;
@@ -368,67 +378,51 @@ footer .cr {
   margin-top: 20px;
 }
 
-.boxes1 {
-  height: 500px;
+.boxes1, .boxes2 {
+  width: 100%;
   float: left;
-  width: 50%;
   background-color: rgba(0, 0, 0, 0.9);
   display: inline-block;
 }
-.boxes2 {
-  float: left;
+
+.boxes3, .boxes4 {
   width: 50%;
   height: 100px;
+  float: left;
   background-color: rgba(0, 0, 0, 0.9);
   display: inline-block;
 }
 
-.desjue {
-  background-color: rgba(0, 0, 0, 0.9);
-}
-
-.galefot {
-  display: inline;
-}
-
-.fotojue img {
-  margin-left: 15%;
+.galefot img {
+  margin: auto;
   width: 300px;
-  border-radius: 2%;
+  border-radius: 1%;
 }
 .mySlides {
-  display:none
+  display:none;
 }
 .fotonav1 {
   float: left;
-}
-.fotonav1 button {
   margin-top: 0px;
-  width: 150px;
+  width: 50px;
 }
 .fotonav2 {
   float: right;
-}
-.fotonav2 button {
   margin-top: 0px;
-  width: 150px;
+  width: 50px;
 }
 
 .textjue {
-  margin-top: 50px;
-  margin-left: 50px;
   font-size: 16px;
   text-align: left;
 }
 
-.estrellas {
-  margin-top: 5px;
-  margin-left: 50px;
-}
 .clasificacion {
   float: left;
   direction: rtl;
   unicode-bidi: bidi-override;
+  margin-top: 5px;
+  margin-left: 50px;
 }
 .clasificacion input[type="radio"] {
   display: none;
@@ -446,8 +440,8 @@ footer .cr {
 }
 
 .compra {
-  margin-top: 15px;
-  margin-left: 50%;
+  margin-right: 5%;
+  float: right;
 }
 .costo {
   color: #4CAF50;
