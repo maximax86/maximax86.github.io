@@ -1,10 +1,10 @@
 /*================================Boton Login*/
-  var modal = document.getElementById('id01');
-  window.onclick = function(event) {
-      if (event.target == modal) {
-          modal.style.display = "none";
-      }
-  }
+var modal = document.getElementById('id01');
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
 
 /*================================a03*/
 var slideIndex = 1; showDivs(slideIndex); function plusDivs(n) {showDivs(slideIndex += n);}

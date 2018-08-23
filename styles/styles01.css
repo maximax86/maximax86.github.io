@@ -165,24 +165,73 @@ footer a:hover {
 
 /*========================Responsive*/
 @media screen and (max-width: 800px) {
-    .leftcolumn, .rightcolumn {
+  .leftcolumn, .rightcolumn {
         width: 100%;
         padding: 0;
     }
+  .cardred img {
+      width: 15%;
+      border-radius: 50%;
+    }
+  .cardlanz img {
+      width: 20%;
+    }
+  .cardred #twitt {
+      background-color: #3b5998;
+    }
+  .cardred #insta {
+      background-color: #800000;
+    }
+  .cardred #face {
+      background-color: #091c9d;
+    }
+  .consol a img {
+      width: 30%;
+    }
+  .cardvid iframe {
+      width: 50%;
+      margin-left: 25%;
+    }
 }
 @media screen and (max-width: 420px) {
-    .topnav a {
-        float: none;
-        width: 100%;
+  .topnav a {
+      width: 100%;
     }
-    .cardmasven {
+  .cardmasven {
       display: none;
     }
-    .video {
-      display: none;
+  .cardlanz img {
+      width: 30%;
     }
-    .boxes3, .boxes4 {
+  .cardred img {
+      width: 25%;
+      border-radius: 50%;
+    }
+  .cardred #twitt {
+      background-color: #3b5998;
+    }
+  .cardred #insta {
+      background-color: #800000;
+    }
+  .cardred #face {
+      background-color: #091c9d;
+    }
+  .consol a img {
+      width: 45%;
+    }
+  .cardvid iframe {
+      width: 100%;
+      margin-left: 0px;
+    }
+  .listajue ul li img{
+      width: 100%;
+      margin-left: -20px;
+    }
+  .boxes3, .boxes4 {
       min-width: 350px;
+    }
+  .video iframe {
+      display: none;
     }
 }
 
