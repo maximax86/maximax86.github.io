@@ -45,6 +45,7 @@ button {
   margin: 8px 0;
   border: none;
   cursor: pointer;
+  transition: 0.2s;
 }
 button:hover {
   background-color: #ddd;
@@ -78,6 +79,7 @@ button:hover {
 }
 .cardlanz img {
   width: 50px;
+  transition: 0.1s;
 }
 .cardlanz img:hover {
   background-color: #333;
@@ -99,6 +101,9 @@ button:hover {
 }
 .cardred img {
   width: 50px;
+  transition: 0.1s;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.3);
 }
 .cardred #twitt:hover {
   background-color: #3b5998;
@@ -189,7 +194,7 @@ footer a:hover {
       background-color: #091c9d;
     }
   .consol a img {
-      width: 30%;
+      width: 20%;
     }
   .cardvid iframe {
       width: 50%;
@@ -230,7 +235,7 @@ footer a:hover {
       background-color: #091c9d;
     }
   .consol a img {
-      width: 45%;
+      width: 25%;
     }
   .cardvid iframe {
       width: 100%;
@@ -376,7 +381,8 @@ footer a:hover {
 }
 .masven img {
   width: 100px;
-  border-radius: 5px;
+  border-radius: 2px;
+  transition: 0.5s;
 }
 .masven img:hover {
   -webkit-transform:scale(1.1);
@@ -393,9 +399,10 @@ footer a:hover {
 }
 .consol img {
   display: inline;
-  width: 200px;
+  width: 150px;
   border-radius: 50%;
   background-color: #faf3dd;
+  transition: 0.5s;
 }
 .consol img:hover {
   background: #ddd;
@@ -422,7 +429,9 @@ footer a:hover {
   display: inline;
 }
 .listajue img {
+  border: solid #5e44ad;
   width: 150px;
+  transition: 0.5s;
 }
 .listajue img:hover {
   -webkit-transform:scale(1.1);
