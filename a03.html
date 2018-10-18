@@ -5,6 +5,7 @@
     <link rel="icon" href="img/icon.png">
     <link rel="stylesheet" type="text/css" href="styles/styles01.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="scripts/javascript.js"></script>
   </head>
   <body>
     <div class="header">
@@ -44,7 +45,7 @@
     <div class="row">
       <div class="leftcolumn">
         <div class="carddesjue">
-          <h1>TITULO DEL JUEGO</h1>
+          <h1 id="titulo"></h1>
             <div class="boxes1">
               <div class="galefot">
                 <div class="fotonav1">
@@ -76,8 +77,7 @@
             </div>
             <div class="boxes2">
               <div class="textjue">
-                  <h2>Aca va la descripción del juego.</h2>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sed diam nunc. Mauris sit amet pellentesque ligula. Nulla et dignissim ligula. Phasellus mauris magna, sagittis eget varius eu, ultricies sed nisi. Praesent ultrices pulvinar luctus. Quisque pulvinar commodo arcu, eu cursus tellus mattis sed. Nulla at magna vel lacus placerat elementum nec ut nisi.</p>
+                  <p id="descripcion"></p>
                 </div>
             </div>
             <div class="boxes3">
@@ -99,9 +99,94 @@
             </div>
             <div class="boxes4">
               <div class="compra">
-                  <div class="costo">
-                    u$s 00,00<br>
-                    <a href="a07.html"><button>Comprar</button></a>
+                  <div id="precio" class="precio">
+                  </div>
+                  <div  class="costo">
+                    <button onclick="document.getElementById('casillacompra').style.display='block'">Comprar</button>
+                      <div id="casillacompra" class="modal">
+                        <form >
+                          <fieldset class="modal-content animate" action="a06.html">
+                            <div>
+                              <span onclick="document.getElementById('casillacompra').style.display='none'" class="close">&times;</span>
+                            </div>
+                            <div>
+                              Cantidad:<br>
+                              <input type="number" name="cantidad" required>
+                              <br><br>
+                              Nombre:<br>
+                              <input type="text" name="name" value="escriba su nombre" required>
+                              <br>
+                              e-mail:<br>
+                              <input type="email" name="email" value="email">
+                            </div>
+                              <br><br>
+                              <select name="Formato">
+                                 <option selected value="0">Formato de envio</option>
+                                    <optgroup label="Digital">
+                                     <option value="Envio Gratuito">Envio gratuito</option>
+                                    </optgroup>
+                                 <optgroup label="Fisico">
+                                     <option value="10"> comun 0,5% +</option>
+                                     <option value="11"> especial 2% +</option>
+                                     <option value="12"> Premium 5% +</option>
+                                 </optgroup>
+                            </select>
+                            <br><br>
+                            Envio:
+                            <select name="cuotas">
+                              <option>Digital</option>
+                              <option>Fisico</option>
+                            </select>
+                              <br><br>
+                            <div>
+                              <input type="radio" name="envio" value="0,5%" checked> comun 0,5% +<br>
+                              <input type="radio" name="envio" value="2%"> especial 2% +<br>
+                              <input type="radio" name="envio" value="5%"> Premium 5% +<br><br>
+                              <input type="text" name="direccion" value="dirección de envio">
+                            </div>
+                            <div>
+                              <input type="text" name="costo" value="aca va el costo total + 22%">
+                            </div>
+                            <div>
+                              Metodo de pago:<br>
+                              <select name="motivo">
+                                <option>VISA</option>
+                                <option>MASTERCARD</option>
+                                <option>AmericanExpress</option>
+                                <option>PayPal</option>
+                              </select>
+                            </div>
+                              <br>
+                            <div>
+                              <label for="Nombre">N° de Cuenta:</label>
+                              <br>
+                              <input placeholder="Numero de Cuenta" type="text" name="N°Cuenta" size="20" maxlength="20" required id="numtarj">
+                            </div>
+                              <br>
+                            <div>
+                              <label for="fecha de vencimiento">Fecha de Vencimiento:</label>
+                              <br>
+                              <input placeholder="venc" type="date" name="FechVen" size="20" required id="FechVen">
+                            </div>
+                              <br>
+                            <div>
+                              Pagos:<br>
+                              <select name="cuotas">
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>6</option>
+                              </select>
+                            </div>
+                              <br>
+                            <div>
+                              <input type="submit" value="Finalizar Compra">
+                              <br><br>
+                              <input type="reset" value="Borrar">
+                            </div>
+                          </fieldset>
+                        </form>
+                      </div>
                   </div>
                 </div>
             </div>
@@ -137,7 +222,7 @@
       </div>
     </div>
     <br>
-    <footer>
+  <footer>
     <div id="leginfo">
       <h3>Información Legal</h3>
       <p>Lorem ipsum<br>dolor sit amet<br>consectetur adipiscing<br>sed eiusmod tempor<br>incidunt ut labore</p>
