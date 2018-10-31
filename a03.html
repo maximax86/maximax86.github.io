@@ -103,55 +103,60 @@
                   </div>
                   <div  class="costo">
                     <button onclick="document.getElementById('casillacompra').style.display='block'">Comprar</button>
-                      <div id="casillacompra" class="modal">
+                      <div id="casillacompra" class="comprak">
                         <form >
-                          <fieldset class="modal-content animate" action="a06.html">
+                          <fieldset class="comprak-content animate" action="a06.html">
                             <div>
                               <span onclick="document.getElementById('casillacompra').style.display='none'" class="close">&times;</span>
                             </div>
                             <div>
-                              Cantidad:<br>
-                              <input type="number" name="cantidad" required>
-                              <br><br>
-                              Nombre:<br>
-                              <input type="text" name="name" value="escriba su nombre" required>
                               <br>
-                              e-mail:<br>
-                              <input type="email" name="email" value="email">
+                              Nombre:<br> <input type="text" name="nombre" placeholder="Escriba su nombre" required>
+                              <br>
+                              E-Mail:<br> <input type="email" name="email" placeholder="E-Mail">
+                            </div>
+                            <br><br>
+                            <div>
+                              Cantidad:
+                              <select name="motivo">
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                                <option>6</option>
+                                <option>7</option>
+                                <option>8</option>
+                                <option>9</option>
+                                <option>10</option>
+                              </select>
                             </div>
                               <br><br>
-                              <select name="Formato">
-                                 <option selected value="0">Formato de envio</option>
-                                    <optgroup label="Digital">
-                                     <option value="Envio Gratuito">Envio gratuito</option>
-                                    </optgroup>
-                                 <optgroup label="Fisico">
-                                     <option value="10"> comun 0,5% +</option>
-                                     <option value="11"> especial 2% +</option>
-                                     <option value="12"> Premium 5% +</option>
-                                 </optgroup>
-                            </select>
-                            <br><br>
                             Envio:
                             <select name="cuotas">
                               <option>Digital</option>
                               <option>Fisico</option>
                             </select>
                               <br><br>
-                            <div>
-                              <input type="radio" name="envio" value="0,5%" checked> comun 0,5% +<br>
-                              <input type="radio" name="envio" value="2%"> especial 2% +<br>
-                              <input type="radio" name="envio" value="5%"> Premium 5% +<br><br>
-                              <input type="text" name="direccion" value="dirección de envio">
+                            <div id="openvio">
+                              <input type="radio" name="envio" value="0,5%" checked> Común + 0,5%<br>
+                              <input type="radio" name="envio" value="2%"> Especial + 2%<br>
+                              <input type="radio" name="envio" value="5%"> Premium + 5%<br><br>
+                              <input type="text" name="direccion" placeholder="dirección de envio">
                             </div>
-                            <div>
-                              <input type="text" name="costo" value="aca va el costo total + 22%">
+                            <br><br>
+                            <div id="detcompra">
+                              <p>$Precio</p>
+                              <p>$IVA</p>
+                              <p>______</p>
+                              <p>$Total</p>
                             </div>
+                            <br><br>
                             <div>
-                              Metodo de pago:<br>
+                              Metodo de pago:
                               <select name="motivo">
                                 <option>VISA</option>
-                                <option>MASTERCARD</option>
+                                <option>MasterCard</option>
                                 <option>AmericanExpress</option>
                                 <option>PayPal</option>
                               </select>
@@ -162,27 +167,9 @@
                               <br>
                               <input placeholder="Numero de Cuenta" type="text" name="N°Cuenta" size="20" maxlength="20" required id="numtarj">
                             </div>
-                              <br>
-                            <div>
-                              <label for="fecha de vencimiento">Fecha de Vencimiento:</label>
-                              <br>
-                              <input placeholder="venc" type="date" name="FechVen" size="20" required id="FechVen">
-                            </div>
-                              <br>
-                            <div>
-                              Pagos:<br>
-                              <select name="cuotas">
-                                <option>1</option>
-                                <option>2</option>
-                                <option>3</option>
-                                <option>6</option>
-                              </select>
-                            </div>
-                              <br>
-                            <div>
-                              <input type="submit" value="Finalizar Compra">
                               <br><br>
-                              <input type="reset" value="Borrar">
+                            <div>
+                              <input id="enviarp" type="submit" value="Finalizar Compra">
                             </div>
                           </fieldset>
                         </form>
