@@ -6,7 +6,7 @@ window.onclick = function(event) {
     }
 }
 
-/*================================a02*/
+/*================================a02JS*/
 document.addEventListener("DOMContentLoaded", function () {
 
 var juegoStr = '{"nombre":"ACA VA EL TITULO DEL JUEGO", "descripcion":"ACA VA LA DESCRIPCION DEL JUEGO - Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.", "precio":"u$s 99,95"}'
@@ -16,6 +16,8 @@ document.getElementById("titulo").innerHTML = juego.nombre;
 document.getElementById("descripcion").innerHTML = juego.descripcion;
 document.getElementById("precio").innerHTML = juego.precio;
 })
+
+/*==============================a02*/
 
 document.addEventListener("DOMContentLoaded", function () {
 
@@ -58,3 +60,17 @@ var dots = document.getElementsByClassName("demo");
   x[slideIndex-1].style.display = "block"; dots[slideIndex-1].className += " w3-white";}
 
 /*================================compra*/
+function show_hide() {
+  if(document.getElementById('check_sh').checked) {
+    document.getElementById('op').style.display = "block";
+  } else {
+    document.getElementById('op').style.display = "none";
+  }
+}
+function noshow() {
+  if(document.getElementById('check_no').checked) {
+    document.getElementById('op').style.display = "none";
+  } else {
+    document.getElementById('op').style.display = "block";
+  }
+}

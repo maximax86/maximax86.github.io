@@ -615,8 +615,12 @@ footer a:hover {
   background-color: green;
 }
 
-#openvio {
-  background-color: red;
+#canti {
+  width: 25%;
+}
+
+#op {
+  display: none;
 }
 
 /*========================a04*/

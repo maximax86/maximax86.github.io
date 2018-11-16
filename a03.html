@@ -113,32 +113,24 @@
                               <br>
                               Nombre:<br> <input type="text" name="nombre" placeholder="Escriba su nombre" required>
                               <br>
-                              E-Mail:<br> <input type="email" name="email" placeholder="E-Mail">
+                              E-Mail:<br> <input type="email" name="email" placeholder="E-Mail" required>
                             </div>
                             <br><br>
                             <div>
                               Cantidad:
-                              <select name="motivo">
-                                <option>1</option>
-                                <option>2</option>
-                                <option>3</option>
-                                <option>4</option>
-                                <option>5</option>
-                                <option>6</option>
-                                <option>7</option>
-                                <option>8</option>
-                                <option>9</option>
-                                <option>10</option>
-                              </select>
+                              <input type="number" id="canti" required></input>
                             </div>
                               <br><br>
                             Envio:
-                            <select name="cuotas">
-                              <option>Digital</option>
-                              <option>Fisico</option>
-                            </select>
+                            <br><br>
+                            <div id="envio">
+                              <label for=Digital>Digital</label>
+                              <input type="radio" name="envi" id="check_no" onclick="noshow()" checked/>
+                              <label for=Fisico>Fisico</label>
+                              <input type="radio" name="envi" id="check_sh" onclick="show_hide()"/>
+                            </div>
                               <br><br>
-                            <div id="openvio">
+                            <div id="op">
                               <input type="radio" name="envio" value="0,5%" checked> Común + 0,5%<br>
                               <input type="radio" name="envio" value="2%"> Especial + 2%<br>
                               <input type="radio" name="envio" value="5%"> Premium + 5%<br><br>
@@ -146,10 +138,10 @@
                             </div>
                             <br><br>
                             <div id="detcompra">
-                              <p>$Precio</p>
-                              <p>$IVA</p>
+                              <p>Precio:<spam id="pre"></spam></p>
+                              <p>IVA:<spam id="iva"></spam></p>
                               <p>______</p>
-                              <p>$Total</p>
+                              <p>Total:<spam id="total"></spam></p>
                             </div>
                             <br><br>
                             <div>
