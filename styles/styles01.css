@@ -598,7 +598,7 @@ footer a:hover {
   text-align: right;
   font-size: 20px;
   border: solid;
-  border-color: red;
+  border-color: grey;
   font-weight: bold;
   color: blue;
 }
@@ -620,9 +620,23 @@ footer a:hover {
 }
 
 #op {
+  background-color: grey;
+  border: solid grey;
   display: none;
 }
 
+.numeros {
+  color: white;
+}
+
+.numeros1 {
+  color: white;
+  font-style: italic;
+}
+
+#direccion {
+  display: none;
+}
 /*========================a04*/
 .cardreg {
     background-color: rgba(0, 0, 0, 0.6);

@@ -99,49 +99,56 @@
             </div>
             <div class="boxes4">
               <div class="compra">
-                  <div id="precio" class="precio">
-                  </div>
+                  <div id="precio" class="precio"></div>
                   <div  class="costo">
                     <button onclick="document.getElementById('casillacompra').style.display='block'">Comprar</button>
                       <div id="casillacompra" class="comprak">
-                        <form >
+                        <form action="a06.html">
                           <fieldset class="comprak-content animate" action="a06.html">
                             <div>
                               <span onclick="document.getElementById('casillacompra').style.display='none'" class="close">&times;</span>
                             </div>
                             <div>
                               <br>
-                              Nombre:<br> <input type="text" name="nombre" placeholder="Escriba su nombre" required>
+                              Nombre:<br> <input type="text" name="nombre" placeholder="Escriba su nombre" autofocus required>
                               <br>
                               E-Mail:<br> <input type="email" name="email" placeholder="E-Mail" required>
                             </div>
                             <br><br>
                             <div>
                               Cantidad:
-                              <input type="number" id="canti" required></input>
+                              <input type="number" id="canti" min="0" required></input>
                             </div>
-                              <br><br>
-                            Envio:
-                            <br><br>
-                            <div id="envio">
-                              <label for=Digital>Digital</label>
-                              <input type="radio" name="envi" id="check_no" onclick="noshow()" checked/>
-                              <label for=Fisico>Fisico</label>
-                              <input type="radio" name="envi" id="check_sh" onclick="show_hide()"/>
-                            </div>
-                              <br><br>
-                            <div id="op">
-                              <input type="radio" name="envio" value="0,5%" checked> Común + 0,5%<br>
-                              <input type="radio" name="envio" value="2%"> Especial + 2%<br>
-                              <input type="radio" name="envio" value="5%"> Premium + 5%<br><br>
-                              <input type="text" name="direccion" placeholder="dirección de envio">
-                            </div>
+                              <br>
+                              <br>
+                              <div>
+                                <br>
+                                Tipo de envio:
+                                <select id="valorenvio">
+                                  <optgroup label="Digital">
+                                    <option id="p0" name="envio" value="0" selected> Gratis</option>
+                                  </optgroup>
+                                  <optgroup label="Fisico">
+                                    <option id="p05" name="envio" value="5"> Común 0,5% + (del costo)</option>
+                                    <option id="p2" name="envio" value="20"> Especial 2% + (del costo)</option>
+                                    <option id="p05" name="envio" value="50"> Premium 5% + (del costo)</option>
+                                  </optgroup>
+                                </select>
+                                <br><br>
+                                <div id="direccion">
+                                  <label for="Direccion"></label>
+                                  <input type="text" name="direccion" placeholder="Ingrese dirección de envio">
+                                </div>
+                                <br>
+                              </div>
                             <br><br>
                             <div id="detcompra">
-                              <p>Precio:<spam id="pre"></spam></p>
-                              <p>IVA:<spam id="iva"></spam></p>
+                              <p>Articulos: <spam id="articulos" class="numeros"  ></spam></p>
+                              <p>Precio: <spam id="costo" class="numeros1"></spam></p>
+                              <p>Envio: <spam id="envio" class="numeros1"></spam></p>
+                              <p>IVA: <spam id="iva" class="numeros1"></spam></p>
                               <p>______</p>
-                              <p>Total:<spam id="total"></spam></p>
+                              <p>Total: <spam id="total" class="numeros1"></spam></p>
                             </div>
                             <br><br>
                             <div>

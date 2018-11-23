@@ -7,15 +7,78 @@ window.onclick = function(event) {
 }
 
 /*================================a02JS*/
-document.addEventListener("DOMContentLoaded", function () {
-
-var juegoStr = '{"nombre":"ACA VA EL TITULO DEL JUEGO", "descripcion":"ACA VA LA DESCRIPCION DEL JUEGO - Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.", "precio":"u$s 99,95"}'
+var juegoStr = '{"nombre":"ACA VA EL TITULO DEL JUEGO", "descripcion":"ACA VA LA DESCRIPCION DEL JUEGO - Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.", "precio":" 99"}'
 var juego = JSON.parse(juegoStr);
 
-document.getElementById("titulo").innerHTML = juego.nombre;
-document.getElementById("descripcion").innerHTML = juego.descripcion;
-document.getElementById("precio").innerHTML = juego.precio;
-})
+
+document.addEventListener("DOMContentLoaded", function () {
+
+
+                  /*==========JSON==========*/
+    document.getElementById("titulo").innerHTML = juego.nombre;
+    document.getElementById("descripcion").innerHTML = juego.descripcion;
+    document.getElementById("precio").innerHTML = "u$s "+ juego.precio;
+                  /*========================*/
+    var direccion = document.getElementById('direccion');
+    var canti = document.getElementById('canti');
+    var cantidad = document.getElementById('articulos');
+    var valor = juego.precio;
+    var costoenvio = 0;
+    var envio = document.getElementById('envio');
+    var enviovalor = document.getElementById('valorenvio');
+    var enviop = 0;
+    var totalcompra = document.getElementById('total');
+    var resultadoTotal = 0;
+
+    enviovalor.addEventListener("change", function(){
+      valorenvio = parseInt(enviovalor.value);
+      enviop = valorenvio * resultadoTotal;
+      costoenvio = enviop/1000;
+      envio.innerHTML = "$" + costoenvio;
+
+      var numeroNaN = canti.value;
+      var numero = parseInt(numeroNaN);
+      var total = document.getElementById('costo');
+      cantidad.innerHTML = numero;
+      resultadoTotal = valor * numero;
+      total.innerHTML = "$" + resultadoTotal;
+      var iva = document.getElementById('iva');
+      var ivaresultado = resultadoTotal * 0.22;
+      iva.innerHTML = "$" + ivaresultado;
+
+      var compraresultado = resultadoTotal + ivaresultado + costoenvio;
+      totalcompra.innerHTML = compraresultado;
+
+      if (enviovalor != 0) {
+        direccion.style.display = "block";
+      }
+      else {
+        direccion.style.display = "none";
+      };
+
+    });
+
+    canti.addEventListener("change", function(){
+      valorenvio = parseInt(enviovalor.value);
+      enviop = valorenvio * resultadoTotal;
+      costoenvio = enviop/1000;
+      envio.innerHTML = "$" + costoenvio;
+
+      var numeroNaN = canti.value;
+      var numero = parseInt(numeroNaN);
+      var total = document.getElementById('costo');
+      cantidad.innerHTML = numero;
+      resultadoTotal = valor * numero;
+      total.innerHTML = "$" + resultadoTotal;
+      var iva = document.getElementById('iva');
+      var ivaresultado = resultadoTotal * 0.22;
+      iva.innerHTML = "$" + ivaresultado;
+
+      var compraresultado = resultadoTotal + ivaresultado + costoenvio;
+      totalcompra.innerHTML = compraresultado;
+
+    });
+});
 
 /*==============================a02*/
 
@@ -58,19 +121,3 @@ var dots = document.getElementsByClassName("demo");
   }
   for (i = 0; i < dots.length; i++) {dots[i].className = dots[i].className.replace(" w3-white", "");}
   x[slideIndex-1].style.display = "block"; dots[slideIndex-1].className += " w3-white";}
-
-/*================================compra*/
-function show_hide() {
-  if(document.getElementById('check_sh').checked) {
-    document.getElementById('op').style.display = "block";
-  } else {
-    document.getElementById('op').style.display = "none";
-  }
-}
-function noshow() {
-  if(document.getElementById('check_no').checked) {
-    document.getElementById('op').style.display = "none";
-  } else {
-    document.getElementById('op').style.display = "block";
-  }
-}
