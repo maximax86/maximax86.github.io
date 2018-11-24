@@ -47,7 +47,7 @@ document.addEventListener("DOMContentLoaded", function () {
       iva.innerHTML = "$" + ivaresultado;
 
       var compraresultado = resultadoTotal + ivaresultado + costoenvio;
-      totalcompra.innerHTML = compraresultado;
+      totalcompra.innerHTML = compraresultado.toFixed(2);
 
       if (costoenvio != 0) {
         direccion.style.display = "block";
@@ -75,7 +75,7 @@ document.addEventListener("DOMContentLoaded", function () {
       iva.innerHTML = "$" + ivaresultado;
 
       var compraresultado = resultadoTotal + ivaresultado + costoenvio;
-      totalcompra.innerHTML = compraresultado;
+      totalcompra.innerHTML = compraresultado.toFixed(2);
 
     });
 });
