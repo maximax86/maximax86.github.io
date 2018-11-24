@@ -429,7 +429,7 @@ footer a:hover {
   display: inline;
 }
 .listajue img {
-  border: solid #5e44ad;
+  border: solid rgba(0,0,0,0.5);
   width: 150px;
   transition: 0.5s;
 }
@@ -598,7 +598,7 @@ footer a:hover {
   text-align: right;
   font-size: 20px;
   border: solid;
-  border-color: grey;
+  border-color: #212f3d;
   font-weight: bold;
   color: blue;
 }

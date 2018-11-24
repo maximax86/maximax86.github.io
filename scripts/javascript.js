@@ -49,7 +49,7 @@ document.addEventListener("DOMContentLoaded", function () {
       var compraresultado = resultadoTotal + ivaresultado + costoenvio;
       totalcompra.innerHTML = compraresultado;
 
-      if (enviovalor != 0) {
+      if (costoenvio != 0) {
         direccion.style.display = "block";
       }
       else {
